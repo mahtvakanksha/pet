@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind webpage</title>
+    <!-- regular css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/cddb2c72f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google-fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Courgette&family=Great+Vibes&family=Inter:wght@200&family=Poppins&family=Sacramento&family=Shadows+Into+Light&family=Zeyada&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- customised tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xs: "340px",
+            sm: "576px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+          },
+          container: {
+            center: true,
+          },
+          fontFamily: {
+            Amatic: ["Amatic SC", "cursive"],
+            Courgette: ["Courgette", "cursive"],
+            Great: ["Great Vibes", "cursive"],
+            Inter: ["Inter", "sans-serif"],
+            Poppins: ["Poppins", "sans-serif"],
+            Sacramento: ["Sacramento", "cursive"],
+            Shadows: ["Shadows Into Light", "cursive"],
+            Zeyada: ["Zeyada", "cursive"],
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Shadows text-xl">
+    <!-- class="dark:bg-slate-900" -->
+    <section id="sec1" class="bg-[#966C3B] p-[30px] xs:rounded-bl-[20%]">
+      <nav class="border-b-[1px] border-yellow-900 pb-2">
+        <div class="navbar md:flex md:justify-between">
+          <div class="logo flex justify-between">
+            <a href="#" class="flex"
+              ><h1 class="font-bold text-2xl text-[white]">Lil'-paws</h1>
+              <i
+                class="fa-solid fa-paw rotate-45 mx-1 align-middle"
+                style="color: #3c2317"
+              ></i>
+              <i
+                class="fa-solid fa-paw rotate-45 align-middle"
+                style="color: #3c2317"
+              ></i
+            ></a>
+            <input type="checkbox" class="checkbox hidden" id="nav_checkbox" />
+            <label for="nav_checkbox">
+              <i
+                class="fa-solid fa-bars md:hidden align-middle"
+                style="color: #272121"
+              ></i
+            ></label>
+          </div>
+          <div class="mobile">
+            <ul class="font-Amatic navmenu font-semibold">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">KITTENS</a></li>
+              <li><a href="#">PUPPIES</a></li>
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">HELPLINE</a></li>
+            </ul>
+          </div>
+          <div class="desktop hidden md:block">
+            <ul class="font-Amatic flex font-semibold font-2xl">
+              <li class="hover:bg-[#765827] px-2 py-[7px] m-[10px] mt-0">
+                <a href="#">HOME</a>
+              </li>
+              <li class="hover:bg-[#765827] px-2 py-[7px] m-[10px] mt-0">
+                <a href="#kittens">KITTENS</a>
+              </li>
+              <li class="hover:bg-[#765827] px-2 py-[7px] m-[10px] mt-0">
+                <a href="#pups">PUPPIES</a>
+              </li>
+              <li class="hover:bg-[#765827] px-2 py-[7px] m-[10px] mt-0">
+                <a href="#shop">SHOP</a>
+              </li>
+              <li class="hover:bg-[#765827] px-2 py-[7px] m-[10px] mt-0">
+                <a href="#helpline">HELPLINE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="text-left p-[10px] sm:flex sm:flex-row md:justify-around">
+        <div class="sm:flex sm:flex-col sm:justify-evenly">
+          <h3 class="my-4 xs:text-2xl text-[white]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit ut,
+            suscipit.
+          </h3>
+          <div class="btn text-center py-[15px] pt-[10px]">
+            <a href="#">
+              <button
+                class="rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827]"
+              >
+                ABOUT US
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div class="image grid mx-2">
+          <img
+            src="./images/dog1.webp"
+            class="mx-auto rounded-full h-[300px]"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="kittens" class="mt-5">
+      <div class="heading_k xs:text-center">
+        <h2 class="text-3xl font-semibold">Cats & Kittens</h2>
+        <p class="m-5 font-medium">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi,
+          maxime minima? Molestias vero quos eius repellendus delectus excepturi
+          voluptas eos?
+        </p>
+      </div>
+      <div class="cards-k sm:grid sm:grid-cols-2">
+        <div class="text-center shadow-xl m-5 p-3">
+          <div class="overflow-hidden">
+            <img
+              src="./images/cat1.jpeg"
+              alt="catimage1"
+              class="h-[347.5px] mx-auto rounded-full hover:scale-125 duration-1000"
+            />
+          </div>
+          <h5 class="text-center font-semibold">name1</h5>
+          <p class="text-center font-semibold">Breed:xyz</p>
+          <a href="#"
+            ><button
+              class="mt-3 rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827]"
+            >
+              Know more!
+            </button></a
+          >
+        </div>
+        <div class="text-center shadow-xl m-5 p-3">
+          <div class="overflow-hidden">
+            <img
+              src="./images/cat2.webp"
+              alt="catimage1"
+              class="h-[347.5px] mx-auto rounded-full hover:scale-125 duration-1000"
+            />
+          </div>
+          <h5 class="text-center font-semibold">name1</h5>
+          <p class="text-center font-semibold">Breed:xyz</p>
+          <a href="#"
+            ><button
+              class="mt-3 rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827]"
+            >
+              Know more!
+            </button></a
+          >
+        </div>
+        <div class="text-center shadow-xl m-5 p-3">
+          <div class="overflow-hidden">
+            <img
+              src="./images/cat4.webp"
+              alt="catimage1"
+              class="h-[347.5px] mx-auto cat4 rounded-full hover:scale-125 duration-1000"
+            />
+          </div>
+          <h5 class="text-center font-semibold">name1</h5>
+          <p class="text-center font-semibold">Breed:xyz</p>
+          <a href="#"
+            ><button
+              class="mt-3 rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827]"
+            >
+              Know more!
+            </button></a
+          >
+        </div>
+        <div class="text-center shadow-xl m-5 p-3">
+          <div class="overflow-hidden">
+            <img
+              src="./images/kitten3.jpeg"
+              alt="catimage1"
+              class="h-[347.5px] rounded-full hover:scale-125 duration-1000 mx-auto"
+            />
+          </div>
+          <h5 class="text-center font-semibold">name1</h5>
+          <p class="text-center font-semibold">Breed:xyz</p>
+          <a href="#"
+            ><button
+              class="mt-3 rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827]"
+            >
+              Know more!
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="pups" class="mt-5">
+      <div class="heading_p xs:text-center">
+        <h2 class="text-3xl font-semibold">Dogs & Puppies</h2>
+        <p class="m-5 fon-medium">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi,
+          maxime minima? Molestias vero quos eius repellendus delectus excepturi
+          voluptas eos?
+        </p>
+      </div>
+      <div class="cards_p sm:grid sm:grid-cols-2">
+        <div class="text-center shadow-xl m-5 p-3">
+          <div class="overflow-hidden">
+            <img
+              src="./images/pexels-julissa-helmuth-3196887.jpg"
+              alt="dogimage1"
+              class="h-[347.5px] mx-auto rounded-full hover:scale-125 duration-1000"
+            />
+          </div>
+          <h5 class="text-center font-semibold">name1</h5>
+          <p class="text-center font-semibold">Breed:xyz</p>
+          <a href="#"
+            ><button
+              class="mt-3 rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827]"
+            >
+              Know more!
+            </button></a
+          >
+        </div>
+        <div class="text-center shadow-xl m-5 p-3">
+          <div class="overflow-hidden">
+            <img
+              src="./images/dog2.jpeg"
+              alt="dogimage1"
+              class="h-[347.5px] mx-auto rounded-full hover:scale-125 duration-1000"
+            />
+          </div>
+          <h5 class="text-center font-semibold">name1</h5>
+          <p class="text-center font-semibold">Breed:xyz</p>
+          <a href="#"
+            ><button
+              class="mt-3 rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827]"
+            >
+              Know more!
+            </button></a
+          >
+        </div>
+        <div class="text-center shadow-xl m-5 p-3">
+          <div class="overflow-hidden">
+            <img
+              src="./images/dog3.webp"
+              alt="dogimage1"
+              class="rounded-full hover:scale-125 duration-1000 h-[347.5px] mx-auto"
+            />
+          </div>
+          <h5 class="text-center font-semibold">name1</h5>
+          <p class="text-center font-semibold">Breed:xyz</p>
+          <a href="#"
+            ><button
+              class="mt-3 rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827]"
+            >
+              Know more!
+            </button></a
+          >
+        </div>
+        <div class="text-center shadow-xl m-5 p-3">
+          <div class="overflow-hidden">
+            <img
+              src="./images/dog4.jpeg"
+              alt="dogimage1"
+              class="h-[347.5px] mx-auto rounded-full hover:scale-125 duration-1000"
+            />
+          </div>
+          <h5 class="text-center font-semibold">name1</h5>
+          <p class="text-center font-semibold">Breed:xyz</p>
+          <a href="#"
+            ><button
+              class="mt-3 rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827]"
+            >
+              Know more!
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#966C3B] p-5 text-[white] mb-4" id="adopt">
+      <div class="heading_adopt text-center">
+        <h2 class="text-center text-3xl font-semibold">Take them home!</h2>
+        <p class="m-5">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          vero recusandae qui illum officia voluptate laudantium tenetur
+          deserunt temporibus! Laborum.
+        </p>
+        <a href="#"
+          ><button
+            class="rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827]"
+          >
+            Know more!
+          </button></a
+        >
+      </div>
+      <div
+        class="images_adopt p-3 m-auto sm:flex sm:flex-row sm:justify-evenly"
+      >
+        <img
+          src="./images/puppies.jpeg"
+          class="sm:h-[200px] sm:rounded-lg rounded-full m-3"
+        />
+        <img
+          src="./images/kittens3.jpeg"
+          class="sm:h-[200px] sm:w-[120px] sm:rounded-lg rounded-full m-3"
+        />
+      </div>
+    </section>
+    <section id="shop" class="text-center">
+      <h2 class="text-3xl font-semibold">Shop Accessories too!</h2>
+      <p class="m-5">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus vero
+        recusandae qui illum officia voluptate laudantium tenetur deserunt
+        temporibus! Laborum.
+      </p>
+      <div class="sm:grid sm:grid-cols-2 md:grid-cols-3 m-5">
+        <div class="one shadow-xl m-5 text-center p-3">
+          <div class="food font-semibold">
+            <h6>FOOD</h6>
+            <img class="h-[170px] mx-auto" src="./images/fiddo.jpeg" />
+            <p>Price: $5</p>
+            <a href="#"
+              ><button
+                class="rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827] m-2"
+              >
+                Buy now!
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="one shadow-xl m-5 text-center p-3">
+          <div class="clothing font-semibold">
+            <h6>CLOTHING</h6>
+            <img class="h-[170px] mx-auto" src="./images/clothing.webp" />
+            <p>Price: $5</p>
+            <a href="#"
+              ><button
+                class="rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827] m-2"
+              >
+                Buy now!
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div class="one shadow-xl m-5 text-center p-3">
+          <div class="bowl font-semibold">
+            <h6>FUR CARE</h6>
+            <img class="h-[170px] mx-auto" src="./images/shampoo.webp" />
+            <p>Price: $5</p>
+            <a href="#"
+              ><button
+                class="rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827] m-2"
+              >
+                Buy now!
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="one shadow-xl m-5 text-center p-3">
+          <div class="bowl font-semibold">
+            <h6>BEDDING</h6>
+            <img class="h-[170px] mx-auto" src="./images/dog1.webp" />
+            <p>Price: $5</p>
+            <a href="#"
+              ><button
+                class="rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827] m-2"
+              >
+                Buy now!
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="one shadow-xl m-5 text-center p-3 h-max">
+          <div class="bowl font-semibold">
+            <h6>BOWLS</h6>
+            <img class="h-[170px] mx-auto" src="./images/bowl.webp" />
+            <p>Price: $5</p>
+            <a href="#"
+              ><button
+                class="rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827] m-2"
+              >
+                Buy now!
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="one shadow-xl m-5 text-center p-3 h-max">
+          <div class="bowl font-semibold">
+            <h6>ACCESSORIES</h6>
+            <img class="h-[170px] mx-auto" src="./images/leash.jpeg" />
+            <p>Price: $5</p>
+            <a href="#"
+              ><button
+                class="rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827] m-2"
+              >
+                Buy now!
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="helpline"
+      class="bg-[#966C3B] p-5 text-[white] rounded-ss-[20%]"
+    >
+      <div class="heading_h text-center">
+        <h2 class="font-semibold text-center text-3xl">ANIMAL HELPLINE!</h2>
+        <p class="m-5">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          vero recusandae qui illum officia voluptate laudantium tenetur
+          deserunt temporibus! Laborum?
+        </p>
+        <a href="#">
+          <button
+            class="rounded border-[#87431D] bg-[#87431D] p-3 text-[white] hover:bg-[#765827] m-2"
+          >
+            CONTACT
+          </button></a
+        >
+      </div>
+      <footer class="text-center">
+        <a href="mailto:someone@example.com"
+          ><i class="px-2 fa-solid fa-envelope" style="color: #ffffff"></i
+        ></a>
+        <a href="https://in.pinterest.com/"
+          ><i class="px-2 fa-brands fa-pinterest" style="color: #ffffff"></i>
+        </a>
+        <a href="https://www.instagram.com/"
+          ><i class="px-2 fa-brands fa-instagram" style="color: #ffffff"></i>
+        </a>
+        <a href="https://twitter.com/X"
+          ><i class="px-2 fa-brands fa-x-twitter" style="color: #ffffff"></i>
+        </a>
+        <a href="https://www.facebook.com/login/"
+          ><i class="px-2 fa-brands fa-facebook-f" style="color: #ffffff"></i
+        ></a>
+      </footer>
+    </section>
+  </body>
+</html>

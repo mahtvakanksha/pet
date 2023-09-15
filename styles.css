@@ -1,0 +1,6 @@
+div.mobile{
+    display:none;
+}
+#checkbox:checked ~ div.mobile{
+    display:block;
+}
